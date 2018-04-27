@@ -241,11 +241,15 @@ p.bold {
   background-size: cover;
 }
 .user-photo--big {
+  width: 100%;
+  height: auto;
+  padding-top: 100%;
   border-radius: 110px;
   background-image: url("../img/placeholders/user-avatar-placeholder-big-female.png");
 }
 @media (min-width: 1200px) {
   .user-photo--big {
+    padding-top: 0;
     height: 205px;
     width: 205px;
   }
