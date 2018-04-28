@@ -90,8 +90,19 @@ body {
 }
 p {
   font-size: 14px;
-  line-height: 24px;
-  color: #777;
+  line-height: 22px;
+  color: #010101;
+}
+@media (min-width: 768px) {
+  p {
+    font-size: 16px;
+    line-height: 28px;
+  }
+}
+p.bold {
+  font-size: 18px;
+  font-weight: 700;
+  margin-bottom: 0;
 }
 .block {
   background: #FFDB4C;
@@ -218,16 +229,30 @@ p {
    ========================================================================== */
 .user-photo {
   overflow: hidden;
-  height: 110px;
-  width: 110px;
-  margin-bottom: 27px;
   margin-right: auto;
   margin-left: auto;
+  height: 110px;
+  width: 110px;
   border-radius: 80px;
+  margin-bottom: 27px;
   background-image: url("../img/placeholders/user-avatar-placeholder-small-female.png");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+}
+.user-photo--big {
+  width: 100%;
+  height: auto;
+  padding-top: 100%;
+  border-radius: 110px;
+  background-image: url("../img/placeholders/user-avatar-placeholder-big-female.png");
+}
+@media (min-width: 1200px) {
+  .user-photo--big {
+    padding-top: 0;
+    height: 205px;
+    width: 205px;
+  }
 }
 .user-photo--shadow {
   box-shadow: 0px 0px 40px 0px #5C4433;
@@ -406,6 +431,85 @@ a.mouse_scroll:focus {
   100% {
     opacity: 1;
   }
+}
+.section {
+  padding-top: 35px;
+  padding-bottom: 40px;
+}
+@media (min-width: 768px) {
+  .section {
+    padding-top: 50px;
+    padding-bottom: 60px;
+  }
+}
+@media (min-width: 768px) {
+  .section {
+    padding-top: 85px;
+    padding-bottom: 90px;
+  }
+}
+.section--bottom-line {
+  border-bottom: 1px solid #e9eff3;
+}
+@media (min-width: 1420px) {
+  .section--bg-laptop {
+    background-image: url("../img/bg/laptop.png");
+    background-repeat: no-repeat;
+    background-position: right top 70%;
+  }
+}
+.heading {
+  font-size: 32px;
+  font-weight: 700;
+  margin: 0 0 9px;
+  color: #6f4529;
+  line-height: 1;
+}
+@media (min-width: 768px) {
+  .heading {
+    font-size: 42px;
+    margin: 0 0 19px;
+  }
+}
+.heading--medium {
+  font-size: 24px;
+  line-height: 28px;
+  color: #010101;
+  margin: 16px 0 20px;
+}
+.def-list {
+  margin: 0 0 43px;
+}
+.def-list--m-b-20 {
+  margin-bottom: 20px;
+}
+.def-list dt {
+  font-size: 14px;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #6f4529;
+  margin-bottom: 5px;
+}
+.def-list dd {
+  margin: 0 0 20px;
+}
+/* ==========================================================================
+   BUTTONS
+   ========================================================================== */
+.button {
+  display: inline-block;
+  font-size: 16px;
+  font-weight: 700;
+  color: #fff;
+  border-radius: 24px;
+  background-color: #6f4529;
+  box-shadow: 0px 3px 15px 0px #5c4433;
+  padding: 11px 26px 14px;
+  cursor: pointer;
+}
+.button .fa {
+  font-size: 18px;
+  margin-right: 5px;
 }
 /* ==========================================================================
    HEADER
