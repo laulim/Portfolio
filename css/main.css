@@ -463,6 +463,7 @@ a.mouse_scroll:focus {
   font-weight: 700;
   margin: 0 0 9px;
   color: #6f4529;
+  line-height: 1;
 }
 @media (min-width: 768px) {
   .heading {
