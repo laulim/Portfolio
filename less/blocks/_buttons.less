@@ -2,12 +2,13 @@
    BUTTONS
    ========================================================================== */
 
-.button {
+a.button {
 	display: inline-block;
 
 	font-size: 16px;
 	font-weight: 700;
 	color: #fff;
+	text-decoration: none;
 
 	border-radius: 24px;
 	background-color: @brown;
@@ -16,8 +17,20 @@
 	padding: 11px 26px 14px;
 	cursor: pointer;
 
+	transition: all 0.3s;
+
 	.fa {
 		font-size: 18px;
 		margin-right: 5px;
+	}
+
+	&:hover, &:focus {
+		color: @brown;
+		background-color: #fff;
+	}
+
+	&:active {
+		color: @yellow;
+		background-color: @brown;
 	}
 }

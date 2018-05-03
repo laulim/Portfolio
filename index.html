@@ -38,9 +38,15 @@
 	<header class="header">
 		<div class="header__inner">
 			<nav class="navigation">
-				<div class="navigation__toggle navigation__toggle--fixed">
+				<!-- Nav-Icon -->
+				<!-- <div class="navigation__toggle navigation__toggle--fixed">
 					<i class="fa fa-bars" aria-hidden="true"></i>
-				</div>
+				</div> -->
+				<button id="navigation__button" class="cmn-toggle-switch cmn-toggle-switch__htx">
+					<span>toggle menu</span>
+				</button>
+				<!-- Nav-Icon -->
+
 				<ul class="navigation__list">
 					<li><a href="#resume">резюме</a></li>
 					<li><a href="#portfolio">портфолио</a></li>
@@ -98,16 +104,16 @@
 							<div class="heading heading--medium">Опыт работы</div>
 
 							<dl class="def-list">
-								<dt>Декабрь — настоящее время</dt>
-								<dd>
+								<dt class="def-list__item">Декабрь — настоящее время</dt>
+								<dd class="def-list__desc">
 									<p>Верстальщик в веб-студии “Веб-Старт”.</p>
 								</dd>
-								<dt>октябрь 2015 — Декабрь 2016</dt>
-								<dd>
+								<dt class="def-list__item">октябрь 2015 — Декабрь 2016</dt>
+								<dd class="def-list__desc">
 									<p>Фрилансер, веб-дизайнер.</p>
 								</dd>
-								<dt>Сентбярь 2014 — Октябрь 2015</dt>
-								<dd>
+								<dt class="def-list__item">Сентбярь 2014 — Октябрь 2015</dt>
+								<dd class="def-list__desc">
 									<p>«ООО Кибер Софт» — Системный администратор.</p>
 								</dd>
 							</dl>
@@ -117,12 +123,12 @@
 							<div class="heading heading--medium">Образование</div>
 
 							<dl class="def-list def-list--m-b-20">
-								<dt>декабрь 2016</dt>
-								<dd>
+								<dt class="def-list__item">декабрь 2016</dt>
+								<dd class="def-list__desc">
 									<p>Курсы по верстке сайтов HTML5, CSS3 - WebCademy.ru</p>
 								</dd>
-								<dt>2008 — 2012</dt>
-								<dd>
+								<dt class="def-list__item">2008 — 2012</dt>
+								<dd class="def-list__desc">
 									<p>Московский Государственный университет дизайна и технологий, специальность дизайнер-технолог.</p>
 								</dd>
 							</dl>
@@ -131,11 +137,10 @@
 					<!-- //Experience & Education -->
 
 					<!-- Button -->
-					<div class="button">
+					<a href="usercontent/pdf/Церковнославянский язык_Миронова Т.Л_2008 -302с.djvu" class="button" target="_blank" download>
 						<i class="fa fa-download"></i> Скачать резюме
-					</div>
+					</a>
 					<!-- //Button -->
-
 				</div>
 				<!-- //Summary -->
 			</div>
@@ -187,7 +192,7 @@
 						</div>
 
 						<div class="portfolio-item__title">
-							<a href="#">Учебный макет Organica</a>
+							<a href="https://laulim.github.io/Organica/" target="_blank">Учебный макет Organica</a>
 						</div>
 
 						<div class="portfolio-item__desc">
@@ -213,7 +218,7 @@
 						</div>
 
 						<div class="portfolio-item__title">
-							<a href="#">Учебный макет Аполло</a>
+							<a href="https://laulim.github.io/Apollo_bs3/" target="_blank">Учебный макет Аполло</a>
 						</div>
 
 						<div class="portfolio-item__desc">
@@ -239,7 +244,7 @@
 						</div>
 
 						<div class="portfolio-item__title">
-							<a href="#">Личный сайт портфолио</a>
+							<a href="#" target="_blank">Личный сайт портфолио</a>
 						</div>
 
 						<div class="portfolio-item__desc">
@@ -265,7 +270,7 @@
 						</div>
 
 						<div class="portfolio-item__title">
-							<a href="#">Промо сайт автомобиля</a>
+							<a href="usercontent/img/full/car-concept.png" target="_blank">Промо сайт автомобиля</a>
 						</div>
 
 						<div class="portfolio-item__desc">
@@ -291,7 +296,7 @@
 						</div>
 
 						<div class="portfolio-item__title">
-							<a href="#">Магазин мотоциклов</a>
+							<a href="usercontent/img/full/motorcycles.jpg" target="_blank">Магазин мотоциклов</a>
 						</div>
 
 						<div class="portfolio-item__desc">
@@ -317,7 +322,7 @@
 						</div>
 
 						<div class="portfolio-item__title">
-							<a href="#">Магазин аудиотехники</a>
+							<a href="usercontent/img/project_music.jpg" target="_blank">Магазин аудиотехники</a>
 						</div>
 
 						<div class="portfolio-item__desc">
@@ -335,49 +340,106 @@
 
 	<!-- Footer -->
 	<!-- Contacts -->
-	<div id="contacts" class="block-bg">
+	<div id="contacts" class="block-bg contacts section section--padding-smaller section--bg-cloud">
 		<div class="container">
 			<div class="row">
+
+				<!-- Contacts - text -->
 				<div class="col-sm-6">
-					<div class="block">
-						Контакты - текст
+					<div class="heading heading--white">
+						Контакты
 					</div>
 
+					<div class="contacts__desc">
+						<p>Если вы ищите специалиста по верстке сайтов, front-end разработчика в команду или для работы над проектом —  я к вашим услугам.</p>
+					</div>
+
+					<!-- Contacts - Data -->
 					<div class="row">
+						<!-- Email, Skype -->
 						<div class="col-lg-6">
-							<div class="block">
-								E-mail
-							</div>
+							<dl class="def-list  def-list--m-b-0">
+								<dt class="def-list__item def-list__item--bigger def-list__item--lite">Email </dt>
+								<dd class="def-list__desc"><a href="mailto:laudylim@yandex.ru">laudylim@yandex.ru</a></dd>
+								<dt class="def-list__item def-list__item--bigger def-list__item--lite">SKYPE</dt>
+								<dd class="def-list__desc"><a href="skype:laudylim?chat">laudylim</a></dd>
+							</dl>
 						</div>
-						<div class="col-lg-6">
-							<div class="block">
-								Phone
-							</div>
-						</div>
-					</div>
+						<!-- // Email, Skype -->
 
-					<div class="block">
-						Социальные иконки
+						<!-- Phone, Address -->
+						<div class="col-lg-6">
+							<dl class="def-list">
+								<dt class="def-list__item def-list__item--bigger def-list__item--lite">телефон</dt>
+								<dd class="def-list__desc"><a href="tel:+79518621565">+7 (951) 862-15-65</a></dd>
+								<dt class="def-list__item def-list__item--bigger def-list__item--lite">адрес</dt>
+								<dd class="def-list__desc">Россия, Воронеж</dd>
+							</dl>
+						</div>
+						<!-- // Phone, Address -->
 					</div>
+					<!-- // Contacts - Data -->
+
+					<!-- Social Icons -->
+
+					<div class="def-list__item def-list__item--bigger def-list__item--lite">
+						социальные сети
+					</div>
+					<div class="def-list__desc">
+						<div class="social-icons">
+							<a href="https://vk.com/id37809095" target="_blank" class="fa fa-vk"></a>
+							<a href="https://www.instagram.com/laudylim/" target="_blank" class="fa fa-instagram"></a>
+							<a href="https://www.facebook.com/mila.kovtun" target="_blank" class="fa fa-facebook"></a>
+							<a href="https://github.com/laulim" target="_blank" class="fa fa-github"></a>
+							<!-- <a href="#" target="_blank" class="fa fa-twitter"></a> -->
+							<!-- <a href="#" target="_blank" class="fa fa-youtube"></a> -->
+						</div>
+					</div>
+					<!-- // Social Icons -->
 				</div>
+				<!-- // Contacts - text -->
 
+				<!-- Contacts - Form -->
 				<div class="col-sm-6">
-					<div class="block">
-						Форма
-					</div>
-				</div>
+					<div class="heading heading--medium heading--white heading--m-t">Связаться со мной</div>
 
+					<form id="contact-form" class="contact-form" action="php/mail.php" method="POST">
+
+						<!-- Hidden Required Fields -->
+						<input type="hidden" name="project_name" value="Мой сайт-портфолио">
+						<input type="hidden" name="email_from" value="info@lyudmilakovtun.ru">
+						<input type="hidden" name="admin_email" value="laudylim@yandex.ru">
+						<input type="hidden" name="form_subject" value="Обратная связь">
+						<!-- // Hidden Required Fields -->
+
+						<input type="text" class="contact-form__input" name="name" placeholder="Имя">
+							<input type="text" class="contact-form__input" name="email" placeholder="E-mail">
+						<div class="clearfix">
+							<input type="text" class="contact-form__input contact-form__input--half-width" name="skype" placeholder="Skype">
+							<input type="text" class="contact-form__input contact-form__input--half-width" name="phone" placeholder="Телефон">
+						</div>
+
+						<div class="contact-form__bg-pencil">
+							<textarea class="contact-form__textarea" name="message" placeholder="Ваше сообщение" required></textarea>
+						</div>
+
+						<input type="submit" class="contact-form__submit" value="Отправить">
+					</form>
+
+					<div id="answer"></div>
+				</div>
+				<!-- Contacts - Form -->
 			</div>
 		</div>
 	</div>
 	<!-- //Contacts -->
 	
 	<!-- Copyright -->
-	<div class="block-bg-copyright">
+	<div class="copyright">
 		<div class="container">
-			<div class="block">
-				Копирайт
-			</div>
+			<p class="copyright__label">© 2018 Людмила Ковтун</p>
+			<p>Веб-разработик из Москвы, занимаюсь версткой и созданием сайтов.</p>
+			<p>Этот сайт сделал в рамках прохождения обучения по верстке на курсах от <a href="http://webcademy.ru/" target="_blank">WebCademy.ru</a></p>
 		</div>
 	</div>
 	<!-- //Copyright -->
@@ -389,12 +451,12 @@
 	<script src="libs/jquery/jquery-3.3.1.min.js"></script>
 	<script src="libs/bootstrap/js/bootstrap.min.js"></script>
 	<script src="libs/pagescroll2id/jquery.malihu.PageScroll2id.js"></script>
-	<script src="libs/mixitup2/jquery.mixitup.min.js"></script>
+	<script src="libs/mixitup3/mixitup.min.js"></script>
 	<script src="libs/fancybox/jquery.fancybox.pack.js"></script>
+	<script src="libs/jquery.validate/jquery.validate.js"></script>
 	
 	<!-- Custom scripts -->
 	<script src="js/navigation.js"></script>
-	<script src="js/filter.js"></script>
 	<script src="js/main.js"></script>
 
 </body>
