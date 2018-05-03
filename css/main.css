@@ -503,7 +503,7 @@ a.mouse_scroll:focus {
   font-size: 18px;
   margin-right: 5px;
 }
-.filter {
+.filter-block {
   text-align: center;
   text-transform: uppercase;
   font-weight: 700;
@@ -512,67 +512,64 @@ a.mouse_scroll:focus {
   margin-bottom: 20px;
 }
 @media (min-width: 768px) {
-  .filter {
+  .filter-block {
     padding-top: 17px;
     margin-bottom: 45px;
   }
 }
-.filter__block {
+.filter-block__block {
   margin: 0;
   padding: 0;
   list-style-type: none;
   text-align: center;
   font-size: 0;
 }
-.filter__element {
+.filter-block__element {
   margin: 0;
   padding: 0;
   font-size: 16px;
   margin-bottom: 10px;
 }
 @media (min-width: 768px) {
-  .filter__element {
+  .filter-block__element {
     display: inline-block;
     margin-bottom: 0;
   }
 }
 @media (min-width: 1200px) {
-  .filter__element {
+  .filter-block__element {
     margin-right: 15px;
   }
-  .filter__element:last-child {
+  .filter-block__element:last-child {
     margin-right: 0;
   }
 }
-.filter__button {
+.filter-block__button {
   display: inline-block;
   cursor: pointer;
   padding: 7px 27px 9px;
 }
-.filter__button:hover,
-.filter__button:focus {
-  padding: 5px 25px 7px;
+.filter-block__button:hover,
+.filter-block__button:focus {
   color: #010101;
-  border: 2px solid #6f4529;
 }
 @media (min-width: 768px) {
-  .filter__button {
+  .filter-block__button {
     padding: 9px 32px 13px;
   }
-  .filter__button:hover,
-  .filter__button:focus {
-    padding: 9px 30px 13px;
-  }
 }
-.filter__button--active {
+.filter-block__button--active {
   padding: 5px 25px 7px;
   color: #010101;
   border: 2px solid #6f4529;
 }
 @media (min-width: 768px) {
-  .filter__button--active {
+  .filter-block__button--active {
     padding: 9px 30px 13px;
   }
+}
+#portfolio-projects .mix {
+  display: none;
 }
 /* ==========================================================================
    PORTFOLIO-ITEM

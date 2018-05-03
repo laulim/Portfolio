@@ -5,5 +5,18 @@ $(document).ready(function() {
 	    highlightSelector:"nav a"
 	});
 
-	
+
+// MixItUp
+	$('#portfolio-projects').mixItUp();
+
+// FancyBox
+	$(".fancybox").fancybox({
+			// Default - with fix from scroll to top
+            helpers: {
+                overlay: {
+                    locked: false
+                }
+            }
+    });
+
 });

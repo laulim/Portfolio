@@ -15,6 +15,7 @@
 	<link rel="stylesheet" href="css/main.css">
 	<link rel="stylesheet" type="text/css" href="fonts/noto-webfont/noto.css">
 	<link rel="stylesheet" type="text/css" href="fonts/font-awesome/css/font-awesome.min.css">
+	<link rel="stylesheet" type="text/css" href="libs/fancybox/jquery.fancybox.css">
 
 	<!-- FavIcons -->
 	<link rel="shortcut icon" href="img/favicons/favicon-48x48.ico"  type="image/x-icon" />
@@ -146,36 +147,36 @@
 	<div id="portfolio" class="section section--padding-smaller section--bg-gear">
 		<div class="container">
 			<div class="heading heading--center">Мои работы</div>
-			
-			<div class="filter">
-				<ul class="filter__block">
-					<li class="filter__element">
-						<span class="filter__button filter__button--active">все</span>
+		
+			<div class="filter-block">
+				<ul class="filter-block__block">
+					<li class="filter-block__element">
+						<span class="filter-block__button filter filter-block__button--active" data-filter="all">все</span>
 					</li>
-					<li class="filter__element">
-						<span class="filter__button ">html+css</span>
+					<li class="filter-block__element">
+						<span class="filter-block__button filter" data-filter=".html-css">html+css</span>
 					</li>
-					<li class="filter__element">
-						<span class="filter__button ">bootstrap</span>
+					<li class="filter-block__element">
+						<span class="filter-block__button filter" data-filter=".bootstrap">bootstrap</span>
 					</li>
-					<li class="filter__element">
-						<span class="filter__button ">учебные</span>
+					<li class="filter-block__element">
+						<span class="filter-block__button filter" data-filter=".tutorial">учебные</span>
 					</li>
-					<li class="filter__element">
-						<span class="filter__button ">на заказ</span>
+					<li class="filter-block__element">
+						<span class="filter-block__button filter" data-filter=".payed">на заказ</span>
 					</li>
 				</ul>
 			</div>
 			
 			<!-- Portfolio-works -->
-			<div class="row">
+			<div class="row" id="portfolio-projects">
 				
 				<!-- Portfolio-Item -->
-				<div class="col-sm-4">
+				<div class="col-sm-4 mix html-css tutorial">
 					<div class="portfolio-item">
 						<div class="portfolio-item__img">
 							
-							<a href="#" class="portfolio-item__img__hover">
+							<a href="usercontent/img/full/organic.png" title="Учебный макет Organica" class="fancybox portfolio-item__img__hover" rel="group">
 								<i class="fa fa-search"></i>
 								<br>
 								<span>смотреть макет</span>
@@ -197,11 +198,11 @@
 				<!-- //Portfolio-Item -->
 
 				<!-- Portfolio-Item -->
-				<div class="col-sm-4">
+				<div class="col-sm-4 mix bootstrap tutorial">
 					<div class="portfolio-item">
 						<div class="portfolio-item__img">
 							
-							<a href="#" class="portfolio-item__img__hover">
+							<a href="usercontent/img/full/apollo.png" title="Учебный макет Аполло" class="fancybox portfolio-item__img__hover" rel="group">
 								<i class="fa fa-search"></i>
 								<br>
 								<span>смотреть макет</span>
@@ -223,11 +224,11 @@
 				<!-- //Portfolio-Item -->
 
 				<!-- Portfolio-Item -->
-				<div class="col-sm-4">
+				<div class="col-sm-4 mix bootstrap tutorial">
 					<div class="portfolio-item">
 						<div class="portfolio-item__img">
 							
-							<a href="#" class="portfolio-item__img__hover">
+							<a href="usercontent/img/full/portfolio.png" title="Личный сайт портфолио" class="fancybox portfolio-item__img__hover" rel="group">
 								<i class="fa fa-search"></i>
 								<br>
 								<span>смотреть макет</span>
@@ -246,14 +247,14 @@
 						</div>
 					</div>
 				</div>
-				<!-- //Portfolio-Item -->
+				<!-- //Port rel="group"folio-Item -->
 
 				<!-- Portfolio-Item -->
-				<div class="col-sm-4">
+				<div class="col-sm-4 mix html-css payed">
 					<div class="portfolio-item">
 						<div class="portfolio-item__img">
 							
-							<a href="#" class="portfolio-item__img__hover">
+							<a href="usercontent/img/full/car-concept.png" title="Промо сайт автомобиля" rel="group" class="fancybox portfolio-item__img__hover">
 								<i class="fa fa-search"></i>
 								<br>
 								<span>смотреть макет</span>
@@ -272,14 +273,14 @@
 						</div>
 					</div>
 				</div>
-				<!-- //Portfolio-Item -->
+				<!-- //Port rel="group"folio-Item -->
 
 				<!-- Portfolio-Item -->
-				<div class="col-sm-4">
+				<div class="col-sm-4 mix bootstrap payed">
 					<div class="portfolio-item">
 						<div class="portfolio-item__img">
 							
-							<a href="#" class="portfolio-item__img__hover">
+							<a href="usercontent/img/full/motorcycles.jpg" title="Магазин мотоциклов" rel="group" class="fancybox portfolio-item__img__hover">
 								<i class="fa fa-search"></i>
 								<br>
 								<span>смотреть макет</span>
@@ -298,14 +299,14 @@
 						</div>
 					</div>
 				</div>
-				<!-- //Portfolio-Item -->
+				<!-- //Port rel="group"folio-Item -->
 
 				<!-- Portfolio-Item -->
-				<div class="col-sm-4">
+				<div class="col-sm-4 mix html-css payed">
 					<div class="portfolio-item">
 						<div class="portfolio-item__img">
 							
-							<a href="#" class="portfolio-item__img__hover">
+							<a href="usercontent/img/full/music.jpg" title="Магазин аудиотехники" rel="group" class="fancybox portfolio-item__img__hover">
 								<i class="fa fa-search"></i>
 								<br>
 								<span>смотреть макет</span>
@@ -324,7 +325,7 @@
 						</div>
 					</div>
 				</div>
-				<!-- //Portfolio-Item -->
+				<!-- //Port rel="group"folio-Item -->
 
 			</div>
 			<!-- //Portfolio-works -->
@@ -388,6 +389,8 @@
 	<script src="libs/jquery/jquery-3.3.1.min.js"></script>
 	<script src="libs/bootstrap/js/bootstrap.min.js"></script>
 	<script src="libs/pagescroll2id/jquery.malihu.PageScroll2id.js"></script>
+	<script src="libs/mixitup2/jquery.mixitup.min.js"></script>
+	<script src="libs/fancybox/jquery.fancybox.pack.js"></script>
 	
 	<!-- Custom scripts -->
 	<script src="js/navigation.js"></script>
