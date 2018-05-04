@@ -647,6 +647,7 @@ a.button:active {
 }
 .portfolio-item__img__hover:hover {
   color: #FFF;
+  text-decoration: none;
 }
 .portfolio-item__img__hover .fa {
   font-size: 64px;
