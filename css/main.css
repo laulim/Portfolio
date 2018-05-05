@@ -607,7 +607,7 @@ a.button:active {
   display: block;
   position: relative;
   margin-bottom: 15px;
-  background-image: url("../../img/placeholders/project_placeholder.jpg");
+  background-image: url("../img/placeholders/project_placeholder.jpg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
